@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Followers India — Social Growth Panel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Followers India home">
+        <span class="brand-mark">F</span><span>followers<span class="brand-gold">india</span><small>GROW WITH CONFIDENCE</small></span>
+      </a>
+      <div class="side-label">WORKSPACE</div>
+      <nav class="nav-list" id="mainNav">
+        <a href="#dashboard" data-route="dashboard"><i data-lucide="layout-dashboard"></i>Overview</a>
+        <a href="#new-order" data-route="new-order"><i data-lucide="plus-circle"></i>New order</a>
+        <a href="#services" data-route="services"><i data-lucide="layers-3"></i>Services</a>
+        <a href="#fastest" data-route="fastest"><i data-lucide="zap"></i>Fastest services</a>
+        <a href="#orders" data-route="orders"><i data-lucide="package"></i>My orders</a>
+      </nav>
+      <div class="side-label">MY ACCOUNT</div>
+      <nav class="nav-list">
+        <a href="#wallet" data-route="wallet"><i data-lucide="wallet"></i>Wallet</a>
+        <a href="#add-funds" data-route="add-funds"><i data-lucide="plus-square"></i>Add funds</a>
+        <a href="#profile" data-route="profile"><i data-lucide="user-round"></i>My profile</a>
+        <a href="#notifications" data-route="notifications"><i data-lucide="bell"></i>Notifications <b class="nav-count" id="notificationCount">2</b></a>
+        <a href="#support" data-route="support"><i data-lucide="life-buoy"></i>Support tickets</a>
+      </nav>
+      <div class="side-label">INFORMATION</div>
+      <nav class="nav-list">
+        <a href="#updates" data-route="updates"><i data-lucide="megaphone"></i>Updates</a>
+        <a href="#faq" data-route="faq"><i data-lucide="circle-help"></i>FAQs</a>
+        <a href="#about" data-route="about"><i data-lucide="info"></i>About us</a>
+        <a href="#contact" data-route="contact"><i data-lucide="mail"></i>Contact</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon"><i data-lucide="headset"></i></div><strong>Need a hand?</strong><p>Our support team is here to help you.</p><a href="#support">Get support <i data-lucide="arrow-up-right"></i></a></div>
+        <button class="profile-mini" id="sidebarProfile"><span class="avatar">SC</span><span><b id="sideUserName">Guest user</b><small id="sideUserEmail">Sign in to your account</small></span><i data-lucide="more-horizontal"></i></button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+        <div class="crumb"><span>Workspace</span><i data-lucide="chevron-right"></i><b id="pageCrumb">Overview</b></div>
+        <div class="top-actions">
+          <div class="status-pill"><span></span> All systems operational</div>
+          <button class="icon-btn" id="topNotifications" aria-label="Notifications"><i data-lucide="bell"></i><em></em></button>
+          <button class="user-chip" id="topProfile"><span class="avatar small">SC</span><span id="topUserName">Guest</span><i data-lucide="chevron-down"></i></button>
+        </div>
+      </header>
+      <section class="page-wrap" id="pageContent" aria-live="polite"></section>
+      <footer class="footer"><span>© 2026 Followers India</span><span>Made for creators <span class="heart">♥</span></span><span><a href="#terms">Terms</a> · <a href="#privacy">Privacy</a></span></footer>
+    </main>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <dialog class="modal" id="appModal"><div class="modal-head"><strong id="modalTitle">Details</strong><button class="icon-btn" data-close-modal aria-label="Close"><i data-lucide="x"></i></button></div><div id="modalBody"></div></dialog>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="app.js"></script>
+</body>
+</html>
